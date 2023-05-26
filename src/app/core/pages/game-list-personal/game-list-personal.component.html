@@ -1,0 +1,52 @@
+
+
+<app-menu></app-menu>
+
+<div class="d-flex justify-content-between align-items-center">
+  <h1 class="titulo p-5">Lista de Abandonados</h1>
+
+    <app-qr></app-qr>
+
+</div>
+
+<div class="forms">
+
+  <mat-form-field  class="p-2">
+    <mat-label>Filtrar por Nota</mat-label>
+    <mat-select [(value)]="nota">
+        <mat-option value="">Sin Nota</mat-option>
+        <mat-option value="1">1</mat-option>
+        <mat-option value="2">2</mat-option>
+        <mat-option value="3">3</mat-option>
+        <mat-option value="4">4</mat-option>
+        <mat-option value="5">5</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field  class="p-2">
+      <mat-label>Ordenar por Fecha</mat-label>
+      <mat-select [(value)]="fecha">
+          <mat-option value="">Sin Orden</mat-option>
+          <mat-option value="desc">Nuevo</mat-option>
+          <mat-option value="asc">Antiguo</mat-option>
+      </mat-select>
+  </mat-form-field>
+
+  <button mat-flat-button extended (click)="filtrar()">
+  Filtrar
+  </button>
+</div>
+
+  <div class="align-items-center"
+    fxLayout="row wrap"
+    fxLayout.xs="column"
+    fxLayoutAlign="center"
+    fxLayoutGap="1.3vw">
+
+      <div fxFlex="20"
+          fxFlex.lg="20"
+          fxFlex.sm="40"
+          *ngFor="let juego of juegos">
+          <app-game-card-valoracion [juego]="juego"></app-game-card-valoracion>
+      </div>
+  </div>

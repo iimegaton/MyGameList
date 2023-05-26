@@ -1,0 +1,12 @@
+<div class="chart-container-barra" *ngIf="linea===true">
+    <canvas baseChart class="chart" [data]="doughnutChartData" [type]="doughnutChartType"></canvas>
+    <div class="col-md-5 margen textarea-container">
+        <input class="form-control" style="resize: none;" #myTextarea placeholder="Inserte ID del usuario a comparar">
+        <br>
+        <button class="btn btn-primary" type="button" (click)="logTextAreaValue(myTextarea.value)">Comparar</button>
+    </div>
+</div>
+
+<div class="chart-container" *ngIf="linea===false">
+    <canvas baseChart class="chart" [data]="doughnutChartData" [type]="doughnutChartType"></canvas>
+</div>

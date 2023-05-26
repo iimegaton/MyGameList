@@ -1,0 +1,9 @@
+.star {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.filled {
+  color: #BB86FC;
+}

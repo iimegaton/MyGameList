@@ -1,0 +1,114 @@
+
+.container-detail{
+  margin: 3em 7em;
+}
+
+@media screen and (max-width: 920px) {
+  .container-detail{
+    margin: 3em 1em;
+  }
+
+
+}
+
+.title-content{
+  justify-content: space-between;
+}
+.justify-content-center{
+  justify-content: space-between;
+}
+
+input[type='radio'] {
+  accent-color: #BB86FC;
+}
+
+.label-lists{
+  margin-top: 1.5em;
+}
+
+.input-group{
+  margin-bottom: 1em;
+}
+
+.description{
+  margin-bottom: 3em;
+}
+.col-md-10{
+  width: 100%;
+}
+
+
+.img-fluid{
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+.metacritic{
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.chips{
+  display: flex;
+  gap: 10px;
+}
+.card{
+  border: none;
+  margin-bottom: 1em;
+  --bs-card-bg:  #424242;
+}
+
+.card-body{
+  background-color: #424242;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.col-md-6, .col-md-5{
+margin-top: 2em ;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.form-control{
+  background-color: #424242;
+  border:none;
+  color: white;
+}
+.btn-primary{
+  background-color: #BB86FC;
+  color: white;
+  border: #BB86FC;
+  margin-right: 10px;
+}
+
+.btns-container{
+  text-align: left;
+  padding-top: 1.5em;
+}
+
+body{
+  background-color: #151515;
+}
+
+.fuente{
+  font-size: 2.7rem;
+}
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="%23f8ce0b" d="M7.999 12.767l-3.908 2.306 1.05-4.853L.589 6.927l4.891-.42L7.999 2.25l2.518 4.258 4.891.42-3.552 3.293 1.05 4.853z"/></svg>');
+
+  background-size: contain;
+  cursor: pointer;
+}
+
